@@ -1,254 +1,153 @@
 # ✈️ LookUp
 
-> Never miss the aircraft flying above you.
+<p align="center">
+  <img src="assets/icon.png" width="120" alt="LookUp Logo">
+</p>
 
-LookUp is an Android application that detects aircraft approaching your location and notifies you before they pass overhead. Simply grant location permission, and LookUp continuously monitors nearby flights, displaying live flight information and sending timely notifications.
-
----
-
-## 📱 Features
-
-- ✈️ Live aircraft detection
-- 🔔 Flight approach notifications
-- 📍 Real-time GPS location tracking
-- 🌍 Interactive map view
-- 📊 Live flight information
-- ⏱ Countdown until aircraft passes overhead
-- 🚀 Background monitoring
-- 🌙 Dark modern UI
-- ⚡ Lightweight and fast
+<p align="center">
+<b>Get notified before an aircraft flies overhead.</b>
+</p>
 
 ---
 
-## Screenshots
+## Overview
 
-| Dashboard | Notification | Map |
-|------------|-------------|------|
-| Add screenshot | Add screenshot | Add screenshot |
+LookUp is an Android application that detects aircraft approaching your current location and notifies you a few minutes before they pass overhead.
+
+The app continuously monitors nearby flights using your location and displays live flight information such as:
+
+- Flight Number
+- Airline
+- Distance
+- Altitude
+- Speed
+- Estimated Time Until Overhead
+
+Its goal is to make spotting aircraft effortless by notifying users before a plane passes overhead.
 
 ---
 
-# Flight Information
+## Features
 
-LookUp displays:
+- ✈️ Live nearby flight detection
+- 🔔 Aircraft approach notifications
+- 📍 Real-time location monitoring
+- ⏱ Countdown until overhead
+- 🌍 Interactive map
+- 📊 Live aircraft information
+- 🌙 Modern dark interface
+- ⚡ Lightweight performance
+- 🔄 Background monitoring
+
+---
+
+## Flight Information Displayed
+
+Each detected aircraft includes:
 
 - Flight Number
 - Airline
 - Altitude
 - Speed
 - Distance
-- Estimated Time Until Overhead
-
-Example
-
-```
-RYR80ZY
-
-Ryanair
-
-Altitude : 10,800 ft
-
-Speed : 297 knots
-
-Distance : 12 km
-
-Passes overhead in 4 minutes
-```
+- Estimated arrival over your location
 
 ---
 
-# How It Works
+## Permissions Used
 
-1. User opens the app.
-2. Location permission is requested.
-3. GPS location is obtained.
-4. Nearby aircraft are fetched.
-5. Flights are filtered based on your location.
-6. The closest approaching aircraft is displayed.
-7. A notification is sent before the aircraft passes overhead.
-
----
-
-# Permissions
-
-LookUp requires the following Android permissions.
+LookUp requests only the permissions required for flight monitoring.
 
 | Permission | Purpose |
-|------------|----------|
+|------------|---------|
 | Fine Location | Detect nearby aircraft |
-| Coarse Location | Approximate location |
-| Background Location | Continue monitoring in background |
+| Coarse Location | Improve location detection |
+| Background Location | Continue monitoring while app is in background |
 | Notifications | Aircraft alerts |
 | Foreground Service | Background monitoring |
-| Receive Boot Completed | Restart monitoring after reboot |
+| Receive Boot Completed | Restart monitoring after device reboot |
 | Vibrate | Notification vibration |
 
 ---
 
-# Built With
+## Privacy
+
+LookUp respects your privacy.
+
+- No user account required
+- No personal information collected
+- No location history stored
+- No user data sold
+- Location is used only for nearby flight detection
+
+---
+
+## Technology
+
+Built using:
 
 - React Native
 - Expo
 - TypeScript
-- Google Maps
-- Android Foreground Service
-- Expo Notifications
+- Google Maps SDK
 - Expo Location
+- Expo Notifications
 - Expo Task Manager
-- Expo Background Task
+- Android Foreground Services
 
 ---
 
-# Project Structure
+## Screenshots
 
-```
-LookUp
-│
-├── app
-│   ├── (tabs)
-│   ├── _layout.tsx
-│
-├── assets
-│
-├── src
-│   ├── components
-│   ├── hooks
-│   ├── services
-│   ├── tasks
-│   ├── utils
-│
-├── android
-│
-├── app.json
-├── eas.json
-└── package.json
-```
+| Dashboard | Notification | Map |
+|-----------|--------------|-----|
+| Add Screenshot | Add Screenshot | Add Screenshot |
 
 ---
 
-# Installation
+## Current Status
 
-Clone the repository
+Current Version: **1.0.0**
 
-```bash
-git clone https://github.com/yourusername/LookUp.git
-```
+Platform:
+- Android
 
-Install dependencies
-
-```bash
-npm install
-```
-
-Start Expo
-
-```bash
-npx expo start
-```
-
-Run Android
-
-```bash
-npx expo run:android
-```
+Status:
+- Production Ready
 
 ---
 
-# Production Build
+## Roadmap
 
-APK
+Future updates may include:
 
-```bash
-eas build --platform android --profile preview
-```
-
-Android App Bundle
-
-```bash
-eas build --platform android --profile production
-```
-
----
-
-# Requirements
-
-- Android 10+
-- Internet connection
-- GPS enabled
-- Location permission
+- Flight history
+- Aircraft photos
+- Airline details
+- Weather overlay
+- Flight route visualization
+- Wear OS support
+- iOS version
+- Improved battery optimization
 
 ---
 
-# Privacy
-
-LookUp only uses your location to detect nearby aircraft.
-
-The app:
-
-- Does not sell your data.
-- Does not collect personal information.
-- Does not require account creation.
-- Stores only local app settings.
-
----
-
-# Roadmap
-
-Upcoming features
-
-- ⭐ Flight history
-- ⭐ Flight radar mode
-- ⭐ Aircraft photos
-- ⭐ Airline information
-- ⭐ Flight route visualization
-- ⭐ Custom notification distance
-- ⭐ Multiple nearby aircraft
-- ⭐ Weather overlay
-- ⭐ Widgets
-- ⭐ Wear OS support
-- ⭐ iOS version
-
----
-
-# Known Limitations
-
-- Background monitoring behavior depends on Android manufacturer battery optimization.
-- Continuous GPS usage may increase battery consumption.
-- Flight availability depends on third-party flight data providers.
-
----
-
-# Contributing
-
-Contributions, feature requests, and bug reports are welcome.
-
-Feel free to fork the repository and submit a pull request.
-
----
-
-# License
-
-This project is licensed under the MIT License.
-
----
-
-# Developer
+## Developer
 
 **Vivek Reddy Kesavarapu**
 
-Freak Codes
+Developer Name: **Freak Codes**
 
 GitHub:
 https://github.com/truly-vivek
 
 ---
 
-# Support
+## License
 
-If you encounter any issues or have suggestions, please open an issue on GitHub or contact the developer.
+Copyright © 2026 Freak Codes.
 
----
+All rights reserved.
 
-## ⭐ If you like LookUp
-
-Give the repository a ⭐ on GitHub to support future development.
+This project is proprietary software.
+Unauthorized copying, modification, distribution, or commercial use is prohibited without written permission from the author.
